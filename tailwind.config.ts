@@ -100,6 +100,11 @@ export default {
 					}
 				}
 			},
+			boxShadow: {
+				'soft': '0 4px 20px hsl(var(--primary) / 0.08)',
+				'warm': '0 8px 30px hsl(var(--accent) / 0.15)',
+				'premium': '0 10px 40px hsl(var(--gold) / 0.2)',
+			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'

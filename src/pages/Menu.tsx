@@ -200,7 +200,7 @@ const Menu = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-muted to-background">
+      <section className="pt-32 pb-20 section-warm">
         <div className="container mx-auto px-4 text-center">
           <Badge className="mb-6 bg-accent text-accent-foreground">
             <Leaf className="w-4 h-4 mr-2" />
@@ -240,7 +240,7 @@ const Menu = () => {
       </section>
 
       {/* Menu Items */}
-      <section className="py-20 bg-background">
+      <section className="py-20 section-subtle">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold font-playfair text-primary mb-12 text-center">
             {categories.find(cat => cat.id === activeCategory)?.name}
@@ -284,7 +284,7 @@ const Menu = () => {
       </section>
 
       {/* Vegetarian Guarantee */}
-      <section className="py-20 bg-gradient-to-r from-primary to-accent text-primary-foreground">
+      <section className="py-20 section-primary">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6">

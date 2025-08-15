@@ -75,7 +75,7 @@ const Homepage = () => {
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild size="lg" variant="outline" className="border-2 border-white text-white text-lg px-8 py-4 rounded-full font-medium transition-all duration-300 hover:bg-white hover:text-primary hover:shadow-soft">
               <Link to="/reservation">Reserve Table</Link>
             </Button>
           </div>
@@ -90,7 +90,7 @@ const Homepage = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-gradient-to-b from-background to-muted">
+      <section className="py-20 section-warm">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -140,7 +140,7 @@ const Homepage = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      <section className="py-16 section-primary">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -155,7 +155,7 @@ const Homepage = () => {
       </section>
 
       {/* Featured Dishes */}
-      <section className="py-20 bg-background">
+      <section className="py-20 section-subtle">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4">Our Specialties</Badge>
@@ -200,7 +200,7 @@ const Homepage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-accent text-primary-foreground">
+      <section className="py-20 section-accent">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold font-playfair mb-6">
             Ready to Experience Pure Vegetarian Excellence?
@@ -209,10 +209,10 @@ const Homepage = () => {
             Book your table today and embark on a culinary journey through authentic Indian flavors.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
+            <Button asChild size="lg" className="bg-white text-primary hover:bg-secondary px-8 py-4 rounded-full font-medium transition-all duration-300">
               <Link to="/reservation">Reserve Your Table</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild size="lg" variant="outline" className="border-2 border-white text-white px-8 py-4 rounded-full font-medium transition-all duration-300 hover:bg-white hover:text-primary">
               <Link to="/location">Find Us</Link>
             </Button>
           </div>
